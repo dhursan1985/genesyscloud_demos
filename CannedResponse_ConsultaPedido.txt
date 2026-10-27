@@ -1,0 +1,25 @@
+Hola,
+
+Hemos localizado su pedido número [NumeroPedido].
+
+Código de cliente: [CodigoCliente]
+Referencia: [Referencia]
+Pedido del cliente: [PedidoCliente]
+Pedido de proveedor: [PedidoProveedor]
+Fecha prevista de entrega: [FechaPrevistaEntrega]
+Fecha de entrega: [FechaEntrega]
+Fecha real de entrega registrada: [RealDeliveryDate]
+Tipo de envío: [TipoEnvio]
+Agencia o ruta: [ShippingLotDescription]
+Albarán: [Albaran]
+Zona logística: [ShippingAreaCode]
+
+Incidencia: [TipologiaIncidencia]
+Detalle: [DescripcionIncidencia]
+Fecha de cierre de incidencia: [FECHA_CIERRE_INC]
+
+Si necesita cualquier información adicional, puede responder a este correo.
+
+Un saludo,
+
+Servicio de Atención al Cliente

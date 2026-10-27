@@ -1,0 +1,25 @@
+Hola,
+
+Hemos localizado su pedido número {{Flow.NumeroPedido}}.
+
+Código de cliente: {{Flow.CodigoCliente}}
+Referencia: {{Flow.Referencia}}
+Pedido del cliente: {{Flow.PedidoCliente}}
+Pedido de proveedor: {{Flow.PedidoProveedor}}
+Fecha prevista de entrega: {{Flow.FechaPrevistaEntrega}}
+Fecha de entrega: {{Flow.FechaEntrega}}
+Fecha real de entrega registrada: {{Flow.RealDeliveryDate}}
+Tipo de envío: {{Flow.TipoEnvio}}
+Agencia o ruta: {{Flow.ShippingLotDescription}}
+Albarán: {{Flow.Albaran}}
+Zona logística: {{Flow.ShippingAreaCode}}
+
+Incidencia: {{Flow.TipologiaIncidencia}}
+Detalle: {{Flow.DescripcionIncidencia}}
+Fecha de cierre de incidencia: {{Flow.FECHA_CIERRE_INC}}
+
+Si necesita cualquier información adicional, puede responder a este correo.
+
+Un saludo,
+
+Servicio de Atención al Cliente

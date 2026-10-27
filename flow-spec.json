@@ -1,0 +1,80 @@
+{
+  "format": "Especificacion documental, NO importable",
+  "name": "Hermet10_Demo_ConsultaPedido",
+  "type": "inboundemail",
+  "language": "es-ES",
+  "status": "specification-ready-runtime-not-validated",
+  "lookup": {
+    "action": "Data Table Lookup",
+    "tableName": "DT_Demo_Pedidos_Clientes",
+    "key": "Flow.orderNumber",
+    "usesDataAction": false,
+    "branches": {
+      "Found": [
+        "Mapear columnas Excel",
+        "Mostrar datos / responder"
+      ],
+      "Not Found": [
+        "Informar",
+        "Escalar"
+      ],
+      "Failure": [
+        "Escalar error tecnico"
+      ]
+    },
+    "keyColumn": "NumeroPedido"
+  },
+  "escalation": {
+    "screenPop": "SC_Consulta_Pedido",
+    "action": "Transfer to ACD",
+    "queueName": "Demo_Hermet10_EmailIN"
+  },
+  "agentScript": {
+    "readOnly": true,
+    "dataActions": [],
+    "editableFields": []
+  },
+  "automaticResponse": {
+    "action": "Send Auto Reply",
+    "subjectOverrideGuaranteed": false
+  },
+  "dataColumns": [
+    "NumeroPedido",
+    "Referencia",
+    "PedidoCliente",
+    "PedidoProveedor",
+    "WorkOrder",
+    "Expediente",
+    "CodigoCliente",
+    "IDResponsable",
+    "FechaSolicitud",
+    "FechaConfirmacion",
+    "FechaPrevistaEntrega",
+    "FechaEntrega",
+    "FechaPrevistaInstalacion",
+    "FechaInstalacion",
+    "FechaSalidaTaller",
+    "TipoEnvio",
+    "PendienteRespuesta",
+    "FechaUltimaInteraccion",
+    "FechaPrevistaPostventa",
+    "FechaAperturaIncidencia",
+    "Albaran",
+    "ShippingLotCode",
+    "ShippingLotDescription",
+    "RealDeliveryDate",
+    "RealShippingDate",
+    "ShippingAreaCode",
+    "ProductionLot",
+    "Instancia",
+    "orden",
+    "ID_INCIDENCIA",
+    "FECHA_APERTURA_INC",
+    "FECHA_CIERRE_INC",
+    "TipologiaIncidencia",
+    "DescripcionIncidencia",
+    "TIEMPO_PREVISTO_RESOLUCION",
+    "TIEMPO_REAL_RESOLUCION",
+    "NivelAfectacionIncidencia"
+  ]
+}

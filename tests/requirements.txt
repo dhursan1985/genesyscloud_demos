@@ -1,0 +1,2 @@
+# Solo para regeneracion/comprobacion del Excel; no se necesita para importar CSV en Genesys.
+openpyxl==3.1.5

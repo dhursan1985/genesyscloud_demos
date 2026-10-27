@@ -1,0 +1,11 @@
+Hola,
+
+Para poder consultar su pedido, necesitamos que nos indique el número de pedido en el cuerpo del email.
+
+Puede utilizar, por ejemplo:
+
+Pedido: 2540721
+
+Un saludo,
+
+Servicio de Atención al Cliente

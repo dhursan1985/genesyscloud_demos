@@ -1,0 +1,14 @@
+{
+  "location": "REEMPLAZAR_LOCATION_REAL",
+  "expectedOrganizationId": "REEMPLAZAR_ID_REAL_ORGANIZACION",
+  "flowName": "Hermet10_Demo_ConsultaPedido",
+  "dataTableName": "DT_Demo_Pedidos_Clientes",
+  "queueName": "Demo_Hermet10_EmailIN",
+  "fallbackQueueName": "Demo_Hermet10_EmailIN",
+  "scriptName": "SC_Consulta_Pedido",
+  "bodyExpression": "Email.Message.body",
+  "senderExpression": "ToString(Email.Message.from)",
+  "outputDirectory": "../exports/flujo-nuevo",
+  "tokenIsClientCredentials": true,
+  "dataTableReady": true
+}

@@ -1,0 +1,21 @@
+{
+  "name": "Consulta de pedido",
+  "libraries": [
+    {
+      "id": "REEMPLAZAR_LIBRARY_ID"
+    }
+  ],
+  "interactionType": "email",
+  "texts": [
+    {
+      "content": "Hola,\n\nHemos localizado su pedido número [NumeroPedido].\n\nCódigo de cliente: [CodigoCliente]\nReferencia: [Referencia]\nPedido del cliente: [PedidoCliente]\nPedido de proveedor: [PedidoProveedor]\nFecha prevista de entrega: [FechaPrevistaEntrega]\nFecha de entrega: [FechaEntrega]\nFecha real de entrega registrada: [RealDeliveryDate]\nTipo de envío: [TipoEnvio]\nAgencia o ruta: [ShippingLotDescription]\nAlbarán: [Albaran]\nZona logística: [ShippingAreaCode]\n\nIncidencia: [TipologiaIncidencia]\nDetalle: [DescripcionIncidencia]\nFecha de cierre de incidencia: [FECHA_CIERRE_INC]\n\nSi necesita cualquier información adicional, puede responder a este correo.\n\nUn saludo,\n\nServicio de Atención al Cliente\n",
+      "contentType": "text/plain",
+      "type": "body"
+    },
+    {
+      "content": "<!doctype html>\n<html lang=\"es\"><head><meta charset=\"UTF-8\"></head><body>\n<p>Hola,</p>\n<p>Hemos localizado su pedido número [NumeroPedido].</p>\n<p>Código de cliente: [CodigoCliente]<br>Referencia: [Referencia]<br>Pedido del cliente: [PedidoCliente]<br>Pedido de proveedor: [PedidoProveedor]<br>Fecha prevista de entrega: [FechaPrevistaEntrega]<br>Fecha de entrega: [FechaEntrega]<br>Fecha real de entrega registrada: [RealDeliveryDate]<br>Tipo de envío: [TipoEnvio]<br>Agencia o ruta: [ShippingLotDescription]<br>Albarán: [Albaran]<br>Zona logística: [ShippingAreaCode]</p>\n<p>Incidencia: [TipologiaIncidencia]<br>Detalle: [DescripcionIncidencia]<br>Fecha de cierre de incidencia: [FECHA_CIERRE_INC]</p>\n<p>Si necesita cualquier información adicional, puede responder a este correo.</p>\n<p>Un saludo,</p>\n<p>Servicio de Atención al Cliente</p>\n</body></html>\n",
+      "contentType": "text/html",
+      "type": "body"
+    }
+  ]
+}

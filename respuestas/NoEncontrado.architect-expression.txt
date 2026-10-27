@@ -1,0 +1,1 @@
+"Hola,\n\nNo hemos podido localizar ningún pedido asociado al número indicado.\n\nUn agente revisará su solicitud y se pondrá en contacto con usted.\n\nUn saludo,\n\nServicio de Atención al Cliente\n"

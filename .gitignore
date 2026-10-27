@@ -1,0 +1,6 @@
+exports/
+.local/
+__pycache__/
+*.pyc
+node_modules/
+generador-flujo/config.local.json

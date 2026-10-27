@@ -1,0 +1,1 @@
+"<!doctype html>\n<html lang=\"es\"><head><meta charset=\"UTF-8\"></head><body>\n<p>Hola,</p>\n<p>Para poder consultar su pedido, necesitamos que nos indique el número de pedido en el cuerpo del email.</p>\n<p>Puede utilizar, por ejemplo:</p>\n<p>Pedido: 2540721</p>\n<p>Un saludo,</p>\n<p>Servicio de Atención al Cliente</p>\n</body></html>\n"

@@ -1,0 +1,162 @@
+{
+  "name": "DT_Demo_Pedidos_Clientes",
+  "description": "37 columnas de TablaVerdadHermet10. Una fila por NumeroPedido; valores distintos separados por |. Solo lectura desde agente.",
+  "schema": {
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "DT_Demo_Pedidos_Clientes",
+    "type": "object",
+    "required": [
+      "key"
+    ],
+    "properties": {
+      "key": {
+        "type": "string",
+        "title": "NumeroPedido"
+      },
+      "Referencia": {
+        "type": "string",
+        "title": "Referencia"
+      },
+      "PedidoCliente": {
+        "type": "string",
+        "title": "PedidoCliente"
+      },
+      "PedidoProveedor": {
+        "type": "string",
+        "title": "PedidoProveedor"
+      },
+      "WorkOrder": {
+        "type": "string",
+        "title": "WorkOrder"
+      },
+      "Expediente": {
+        "type": "string",
+        "title": "Expediente"
+      },
+      "CodigoCliente": {
+        "type": "string",
+        "title": "CodigoCliente"
+      },
+      "IDResponsable": {
+        "type": "string",
+        "title": "IDResponsable"
+      },
+      "FechaSolicitud": {
+        "type": "string",
+        "title": "FechaSolicitud"
+      },
+      "FechaConfirmacion": {
+        "type": "string",
+        "title": "FechaConfirmacion"
+      },
+      "FechaPrevistaEntrega": {
+        "type": "string",
+        "title": "FechaPrevistaEntrega"
+      },
+      "FechaEntrega": {
+        "type": "string",
+        "title": "FechaEntrega"
+      },
+      "FechaPrevistaInstalacion": {
+        "type": "string",
+        "title": "FechaPrevistaInstalacion"
+      },
+      "FechaInstalacion": {
+        "type": "string",
+        "title": "FechaInstalacion"
+      },
+      "FechaSalidaTaller": {
+        "type": "string",
+        "title": "FechaSalidaTaller"
+      },
+      "TipoEnvio": {
+        "type": "string",
+        "title": "TipoEnvio"
+      },
+      "PendienteRespuesta": {
+        "type": "string",
+        "title": "PendienteRespuesta"
+      },
+      "FechaUltimaInteraccion": {
+        "type": "string",
+        "title": "FechaUltimaInteraccion"
+      },
+      "FechaPrevistaPostventa": {
+        "type": "string",
+        "title": "FechaPrevistaPostventa"
+      },
+      "FechaAperturaIncidencia": {
+        "type": "string",
+        "title": "FechaAperturaIncidencia"
+      },
+      "Albaran": {
+        "type": "string",
+        "title": "Albaran"
+      },
+      "ShippingLotCode": {
+        "type": "string",
+        "title": "ShippingLotCode"
+      },
+      "ShippingLotDescription": {
+        "type": "string",
+        "title": "ShippingLotDescription"
+      },
+      "RealDeliveryDate": {
+        "type": "string",
+        "title": "RealDeliveryDate"
+      },
+      "RealShippingDate": {
+        "type": "string",
+        "title": "RealShippingDate"
+      },
+      "ShippingAreaCode": {
+        "type": "string",
+        "title": "ShippingAreaCode"
+      },
+      "ProductionLot": {
+        "type": "string",
+        "title": "ProductionLot"
+      },
+      "Instancia": {
+        "type": "string",
+        "title": "Instancia"
+      },
+      "orden": {
+        "type": "string",
+        "title": "orden"
+      },
+      "ID_INCIDENCIA": {
+        "type": "string",
+        "title": "ID_INCIDENCIA"
+      },
+      "FECHA_APERTURA_INC": {
+        "type": "string",
+        "title": "FECHA_APERTURA_INC"
+      },
+      "FECHA_CIERRE_INC": {
+        "type": "string",
+        "title": "FECHA_CIERRE_INC"
+      },
+      "TipologiaIncidencia": {
+        "type": "string",
+        "title": "TipologiaIncidencia"
+      },
+      "DescripcionIncidencia": {
+        "type": "string",
+        "title": "DescripcionIncidencia"
+      },
+      "TIEMPO_PREVISTO_RESOLUCION": {
+        "type": "string",
+        "title": "TIEMPO_PREVISTO_RESOLUCION"
+      },
+      "TIEMPO_REAL_RESOLUCION": {
+        "type": "string",
+        "title": "TIEMPO_REAL_RESOLUCION"
+      },
+      "NivelAfectacionIncidencia": {
+        "type": "string",
+        "title": "NivelAfectacionIncidencia"
+      }
+    }
+  }
+}

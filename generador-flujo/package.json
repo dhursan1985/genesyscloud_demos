@@ -1,0 +1,16 @@
+{
+  "name": "hermet10-generador-flujo-email",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Generador de un flujo nuevo en memoria con el SDK oficial de Architect",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "generate": "node generate.cjs",
+    "test": "node --test builder.test.cjs runner.test.cjs"
+  },
+  "dependencies": {
+    "purecloud-flow-scripting-api-sdk-javascript": "0.70.1"
+  }
+}

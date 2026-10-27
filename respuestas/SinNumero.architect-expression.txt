@@ -1,0 +1,1 @@
+"Hola,\n\nPara poder consultar su pedido, necesitamos que nos indique el número de pedido en el cuerpo del email.\n\nPuede utilizar, por ejemplo:\n\nPedido: 2540721\n\nUn saludo,\n\nServicio de Atención al Cliente\n"

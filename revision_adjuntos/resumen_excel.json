@@ -1,0 +1,149 @@
+{
+  "sourceFile": "TablaVerdadHermet10.xlsx",
+  "sha256": "4c765dbb98ccd18e5f6329c5aa09a00888c76127b8c7f687375b10eecb550f1f",
+  "sheet": "Hoja1",
+  "dataRowCount": 90,
+  "columnCount": 37,
+  "uniqueOrderCount": 15,
+  "rowCountByOrder": {
+    "2540710": 10,
+    "2540711": 16,
+    "2540712": 1,
+    "2540713": 5,
+    "2540719": 1,
+    "2540721": 2,
+    "2540722": 1,
+    "2540723": 6,
+    "2540740": 9,
+    "2540741": 9,
+    "2540742": 18,
+    "2540743": 9,
+    "2540744": 1,
+    "2540746": 1,
+    "2540747": 1
+  },
+  "order2540721": {
+    "rowCount": 2,
+    "distinctValuesByColumn": {
+      "NumeroPedido": [
+        "2540721"
+      ],
+      "Referencia": [
+        "80822416"
+      ],
+      "PedidoCliente": [
+        "778036"
+      ],
+      "PedidoProveedor": [
+        "80822416"
+      ],
+      "WorkOrder": [
+        "NULL"
+      ],
+      "Expediente": [
+        "NULL"
+      ],
+      "CodigoCliente": [
+        "10065"
+      ],
+      "IDResponsable": [
+        "693"
+      ],
+      "FechaSolicitud": [
+        "2025-09-29 00:00:00.000"
+      ],
+      "FechaConfirmacion": [
+        "2025-09-29 00:00:00.000"
+      ],
+      "FechaPrevistaEntrega": [
+        "2025-10-03T00:00:00"
+      ],
+      "FechaEntrega": [
+        "2025-10-03 00:00:00.000"
+      ],
+      "FechaPrevistaInstalacion": [
+        "2025-10-03T00:00:00"
+      ],
+      "FechaInstalacion": [
+        "NULL"
+      ],
+      "FechaSalidaTaller": [
+        "2025-10-03 14:51:55.907"
+      ],
+      "TipoEnvio": [
+        "OTROS"
+      ],
+      "PendienteRespuesta": [
+        "NULL"
+      ],
+      "FechaUltimaInteraccion": [
+        "NULL"
+      ],
+      "FechaPrevistaPostventa": [
+        "NULL"
+      ],
+      "FechaAperturaIncidencia": [
+        "NULL"
+      ],
+      "Albaran": [
+        "22535803"
+      ],
+      "ShippingLotCode": [
+        "45674"
+      ],
+      "ShippingLotDescription": [
+        "L- RUTA CANTABRIA"
+      ],
+      "RealDeliveryDate": [
+        "2025-10-06 07:05:13.197"
+      ],
+      "RealShippingDate": [
+        "2025-10-06 07:05:13.197"
+      ],
+      "ShippingAreaCode": [
+        "CANTA"
+      ],
+      "ProductionLot": [
+        "NULL"
+      ],
+      "Instancia": [
+        "1"
+      ],
+      "orden": [
+        "1",
+        "2"
+      ],
+      "ID_INCIDENCIA": [
+        "153509"
+      ],
+      "FECHA_APERTURA_INC": [
+        "2025-10-01 20:42:06.580"
+      ],
+      "FECHA_CIERRE_INC": [
+        "2025-10-08 14:33:55.247"
+      ],
+      "TipologiaIncidencia": [
+        "Falta de Material"
+      ],
+      "DescripcionIncidencia": [
+        "falta tapa interior de 155 la viuda"
+      ],
+      "TIEMPO_PREVISTO_RESOLUCION": [
+        "NULL"
+      ],
+      "TIEMPO_REAL_RESOLUCION": [
+        "NULL"
+      ],
+      "NivelAfectacionIncidencia": [
+        "Pedido Completo"
+      ]
+    }
+  },
+  "notSuppliedByWorkbook": [
+    "customerName",
+    "customerEmail",
+    "customerPhone",
+    "status"
+  ],
+  "note": "No se han actualizado ni inventado datos faltantes; no se carga la hoja directamente en una tabla de clave unica."
+}

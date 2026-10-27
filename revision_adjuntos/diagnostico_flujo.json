@@ -1,0 +1,43 @@
+{
+  "scope": "Inspeccion estructural local; NO certifica importacion, esquema privado ni ejecucion de Architect",
+  "sourceFile": "Hermet10_Demo_v1-1.i3InboundEmailFlow",
+  "sha256": "5ffd302202fb3f358bfd5029a9cad7617bb474a9c3314ba07e91396bcfef39b5",
+  "encoding": "Base64 de texto JSON codificado por porcentajes",
+  "name": "Hermet10_Demo_ConsultaPedido",
+  "type": "inboundemail",
+  "language": "es-ES",
+  "actionCount": 6,
+  "reachableActionCount": 5,
+  "unreachableActions": [
+    {
+      "name": "Enviar respuesta automática",
+      "type": "SendResponseAction"
+    }
+  ],
+  "missingRequiredFlowVariables": [
+    "customerPhone",
+    "incidentType",
+    "supplierOrder"
+  ],
+  "undeclaredReferencedFlowVariables": [],
+  "screenPopActionCount": 0,
+  "findings": [
+    {
+      "action": "Obtener número de pedido",
+      "issue": "participantData vacio; esta accion no extrae ni asigna Flow.orderNumber"
+    },
+    {
+      "action": "Data Table Lookup - DT_Demo_Pedidos_Clientes",
+      "issue": "config.lit contiene Flow.orderNumber como literal; no acredita una expresion de variable"
+    },
+    {
+      "action": "Data Table Lookup - DT_Demo_Pedidos_Clientes",
+      "issue": "No constan mapeos de columnas ni ramas Found/Not Found/Failure; solo nextAction"
+    },
+    {
+      "action": "Pedido encontrado",
+      "issue": "conditions vacio; solo hay defaultAction en este documento"
+    }
+  ],
+  "importabilityVerified": false
+}

@@ -1,0 +1,17 @@
+{
+  "dataTableName": "DT_Demo_Pedidos_Clientes",
+  "queueName": "Demo_Hermet10_EmailIN",
+  "flowName": "Hermet10_Demo_ConsultaPedido",
+  "scriptName": "SC_Consulta_Pedido",
+  "cannedResponseName": "Consulta de pedido",
+  "orderNumber": "2540721",
+  "language": "es-ES",
+  "inboundEmail": "pedidos@demo-hermet10.com",
+  "demoOnly": true,
+  "dataTableReady": true,
+  "dataTableStatus": "ready-consolidated-by-order",
+  "readOnlyAgentScript": true,
+  "sourceFile": "datos/TablaVerdadHermet10.xlsx",
+  "dataTableKeyColumn": "NumeroPedido",
+  "consolidationDelimiter": " | "
+}

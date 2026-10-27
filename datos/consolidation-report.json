@@ -1,0 +1,129 @@
+{
+  "decision": "Usuario elige consolidar a una fila por pedido",
+  "sourceRows": 90,
+  "outputRows": 15,
+  "primaryKeyColumn": "NumeroPedido",
+  "apiPrimaryKey": "key",
+  "delimiter": " | ",
+  "rule": "Valores distintos por columna, orden de primera aparicion. NULL literal y espacios conservados. No se infieren estados/clientes ni fechas preferentes. La consolidacion no conserva relaciones entre columnas de distintas filas; consultar original para ese detalle.",
+  "fieldsWithMultipleValuesByOrder": {
+    "2540710": {
+      "Instancia": [
+        "1",
+        "2"
+      ],
+      "orden": [
+        "4",
+        "5",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+        "14"
+      ]
+    },
+    "2540711": {
+      "Instancia": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "orden": [
+        "2",
+        "3",
+        "4",
+        "5"
+      ]
+    },
+    "2540713": {
+      "Instancia": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ]
+    },
+    "2540721": {
+      "orden": [
+        "1",
+        "2"
+      ]
+    },
+    "2540723": {
+      "Instancia": [
+        "1",
+        "2"
+      ],
+      "orden": [
+        "0",
+        "1",
+        "2",
+        "3",
+        "4"
+      ]
+    },
+    "2540740": {
+      "Instancia": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9"
+      ]
+    },
+    "2540741": {
+      "Instancia": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9"
+      ]
+    },
+    "2540742": {
+      "Instancia": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "orden": [
+        "2",
+        "3"
+      ]
+    },
+    "2540743": {
+      "Instancia": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9"
+      ]
+    }
+  },
+  "maxFieldLength": 37,
+  "originalCsvSha256": "5a475622b9b63bb37043b34f49af8f64eaf8adaac58a1abfec0799e07ca07863",
+  "consolidatedCsvSha256": "67fbc638c5a9b8e9bb2fd464cc028d56d0eb2accc779d7bcbcf578d22bfff6d0"
+}
