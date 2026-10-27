@@ -1,0 +1,389 @@
+[
+  {
+    "name": "NumeroPedido",
+    "type": "String",
+    "input": true,
+    "output": false,
+    "readOnly": true,
+    "architect": "Flow.NumeroPedido",
+    "default": ""
+  },
+  {
+    "name": "Referencia",
+    "type": "String",
+    "input": true,
+    "output": false,
+    "readOnly": true,
+    "architect": "Flow.Referencia",
+    "default": ""
+  },
+  {
+    "name": "PedidoCliente",
+    "type": "String",
+    "input": true,
+    "output": false,
+    "readOnly": true,
+    "architect": "Flow.PedidoCliente",
+    "default": ""
+  },
+  {
+    "name": "PedidoProveedor",
+    "type": "String",
+    "input": true,
+    "output": false,
+    "readOnly": true,
+    "architect": "Flow.PedidoProveedor",
+    "default": ""
+  },
+  {
+    "name": "WorkOrder",
+    "type": "String",
+    "input": true,
+    "output": false,
+    "readOnly": true,
+    "architect": "Flow.WorkOrder",
+    "default": ""
+  },
+  {
+    "name": "Expediente",
+    "type": "String",
+    "input": true,
+    "output": false,
+    "readOnly": true,
+    "architect": "Flow.Expediente",
+    "default": ""
+  },
+  {
+    "name": "CodigoCliente",
+    "type": "String",
+    "input": true,
+    "output": false,
+    "readOnly": true,
+    "architect": "Flow.CodigoCliente",
+    "default": ""
+  },
+  {
+    "name": "IDResponsable",
+    "type": "String",
+    "input": true,
+    "output": false,
+    "readOnly": true,
+    "architect": "Flow.IDResponsable",
+    "default": ""
+  },
+  {
+    "name": "FechaSolicitud",
+    "type": "String",
+    "input": true,
+    "output": false,
+    "readOnly": true,
+    "architect": "Flow.FechaSolicitud",
+    "default": ""
+  },
+  {
+    "name": "FechaConfirmacion",
+    "type": "String",
+    "input": true,
+    "output": false,
+    "readOnly": true,
+    "architect": "Flow.FechaConfirmacion",
+    "default": ""
+  },
+  {
+    "name": "FechaPrevistaEntrega",
+    "type": "String",
+    "input": true,
+    "output": false,
+    "readOnly": true,
+    "architect": "Flow.FechaPrevistaEntrega",
+    "default": ""
+  },
+  {
+    "name": "FechaEntrega",
+    "type": "String",
+    "input": true,
+    "output": false,
+    "readOnly": true,
+    "architect": "Flow.FechaEntrega",
+    "default": ""
+  },
+  {
+    "name": "FechaPrevistaInstalacion",
+    "type": "String",
+    "input": true,
+    "output": false,
+    "readOnly": true,
+    "architect": "Flow.FechaPrevistaInstalacion",
+    "default": ""
+  },
+  {
+    "name": "FechaInstalacion",
+    "type": "String",
+    "input": true,
+    "output": false,
+    "readOnly": true,
+    "architect": "Flow.FechaInstalacion",
+    "default": ""
+  },
+  {
+    "name": "FechaSalidaTaller",
+    "type": "String",
+    "input": true,
+    "output": false,
+    "readOnly": true,
+    "architect": "Flow.FechaSalidaTaller",
+    "default": ""
+  },
+  {
+    "name": "TipoEnvio",
+    "type": "String",
+    "input": true,
+    "output": false,
+    "readOnly": true,
+    "architect": "Flow.TipoEnvio",
+    "default": ""
+  },
+  {
+    "name": "PendienteRespuesta",
+    "type": "String",
+    "input": true,
+    "output": false,
+    "readOnly": true,
+    "architect": "Flow.PendienteRespuesta",
+    "default": ""
+  },
+  {
+    "name": "FechaUltimaInteraccion",
+    "type": "String",
+    "input": true,
+    "output": false,
+    "readOnly": true,
+    "architect": "Flow.FechaUltimaInteraccion",
+    "default": ""
+  },
+  {
+    "name": "FechaPrevistaPostventa",
+    "type": "String",
+    "input": true,
+    "output": false,
+    "readOnly": true,
+    "architect": "Flow.FechaPrevistaPostventa",
+    "default": ""
+  },
+  {
+    "name": "FechaAperturaIncidencia",
+    "type": "String",
+    "input": true,
+    "output": false,
+    "readOnly": true,
+    "architect": "Flow.FechaAperturaIncidencia",
+    "default": ""
+  },
+  {
+    "name": "Albaran",
+    "type": "String",
+    "input": true,
+    "output": false,
+    "readOnly": true,
+    "architect": "Flow.Albaran",
+    "default": ""
+  },
+  {
+    "name": "ShippingLotCode",
+    "type": "String",
+    "input": true,
+    "output": false,
+    "readOnly": true,
+    "architect": "Flow.ShippingLotCode",
+    "default": ""
+  },
+  {
+    "name": "ShippingLotDescription",
+    "type": "String",
+    "input": true,
+    "output": false,
+    "readOnly": true,
+    "architect": "Flow.ShippingLotDescription",
+    "default": ""
+  },
+  {
+    "name": "RealDeliveryDate",
+    "type": "String",
+    "input": true,
+    "output": false,
+    "readOnly": true,
+    "architect": "Flow.RealDeliveryDate",
+    "default": ""
+  },
+  {
+    "name": "RealShippingDate",
+    "type": "String",
+    "input": true,
+    "output": false,
+    "readOnly": true,
+    "architect": "Flow.RealShippingDate",
+    "default": ""
+  },
+  {
+    "name": "ShippingAreaCode",
+    "type": "String",
+    "input": true,
+    "output": false,
+    "readOnly": true,
+    "architect": "Flow.ShippingAreaCode",
+    "default": ""
+  },
+  {
+    "name": "ProductionLot",
+    "type": "String",
+    "input": true,
+    "output": false,
+    "readOnly": true,
+    "architect": "Flow.ProductionLot",
+    "default": ""
+  },
+  {
+    "name": "Instancia",
+    "type": "String",
+    "input": true,
+    "output": false,
+    "readOnly": true,
+    "architect": "Flow.Instancia",
+    "default": ""
+  },
+  {
+    "name": "orden",
+    "type": "String",
+    "input": true,
+    "output": false,
+    "readOnly": true,
+    "architect": "Flow.orden",
+    "default": ""
+  },
+  {
+    "name": "ID_INCIDENCIA",
+    "type": "String",
+    "input": true,
+    "output": false,
+    "readOnly": true,
+    "architect": "Flow.ID_INCIDENCIA",
+    "default": ""
+  },
+  {
+    "name": "FECHA_APERTURA_INC",
+    "type": "String",
+    "input": true,
+    "output": false,
+    "readOnly": true,
+    "architect": "Flow.FECHA_APERTURA_INC",
+    "default": ""
+  },
+  {
+    "name": "FECHA_CIERRE_INC",
+    "type": "String",
+    "input": true,
+    "output": false,
+    "readOnly": true,
+    "architect": "Flow.FECHA_CIERRE_INC",
+    "default": ""
+  },
+  {
+    "name": "TipologiaIncidencia",
+    "type": "String",
+    "input": true,
+    "output": false,
+    "readOnly": true,
+    "architect": "Flow.TipologiaIncidencia",
+    "default": ""
+  },
+  {
+    "name": "DescripcionIncidencia",
+    "type": "String",
+    "input": true,
+    "output": false,
+    "readOnly": true,
+    "architect": "Flow.DescripcionIncidencia",
+    "default": ""
+  },
+  {
+    "name": "TIEMPO_PREVISTO_RESOLUCION",
+    "type": "String",
+    "input": true,
+    "output": false,
+    "readOnly": true,
+    "architect": "Flow.TIEMPO_PREVISTO_RESOLUCION",
+    "default": ""
+  },
+  {
+    "name": "TIEMPO_REAL_RESOLUCION",
+    "type": "String",
+    "input": true,
+    "output": false,
+    "readOnly": true,
+    "architect": "Flow.TIEMPO_REAL_RESOLUCION",
+    "default": ""
+  },
+  {
+    "name": "NivelAfectacionIncidencia",
+    "type": "String",
+    "input": true,
+    "output": false,
+    "readOnly": true,
+    "architect": "Flow.NivelAfectacionIncidencia",
+    "default": ""
+  },
+  {
+    "name": "orderNumber",
+    "type": "String",
+    "input": true,
+    "output": false,
+    "readOnly": true,
+    "architect": "Flow.orderNumber",
+    "default": ""
+  },
+  {
+    "name": "lookupFound",
+    "type": "Boolean",
+    "input": true,
+    "output": false,
+    "readOnly": true,
+    "architect": "Flow.lookupFound",
+    "default": false
+  },
+  {
+    "name": "senderEmail",
+    "type": "String",
+    "input": true,
+    "output": false,
+    "readOnly": true,
+    "architect": "Flow.senderEmail",
+    "default": ""
+  },
+  {
+    "name": "contactReason",
+    "type": "String",
+    "input": true,
+    "output": false,
+    "readOnly": true,
+    "architect": "Flow.contactReason",
+    "default": ""
+  },
+  {
+    "name": "escalationReason",
+    "type": "String",
+    "input": true,
+    "output": false,
+    "readOnly": true,
+    "architect": "Flow.escalationReason",
+    "default": ""
+  },
+  {
+    "name": "incidentIndicator",
+    "type": "Boolean",
+    "input": true,
+    "output": false,
+    "readOnly": true,
+    "architect": "Flow.incidentIndicator",
+    "default": false
+  }
+]
