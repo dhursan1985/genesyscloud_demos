@@ -8,8 +8,18 @@ $utf8=New-Object System.Text.UTF8Encoding($false,$true)
 $jsonFiles=@(Get-ChildItem -LiteralPath $Root -Filter '*.json' -File -Recurse | Where-Object {$_.FullName -notmatch '[\\/](exports|\.local|\.git|node_modules)[\\/]'})
 foreach($file in $jsonFiles){
     $text=$utf8.GetString([IO.File]::ReadAllBytes($file.FullName)).TrimStart([char]0xFEFF)
-    if($PSVersionTable.PSVersion.Major -ge 6){$null=$text | ConvertFrom-Json -AsHashtable -ErrorAction Stop}
-    else{Add-Type -AssemblyName System.Web.Extensions; $serializer=New-Object System.Web.Script.Serialization.JavaScriptSerializer; $serializer.MaxJsonLength=16777216; $null=$serializer.DeserializeObject($text)}
+    try {
+        if($PSVersionTable.PSVersion.Major -ge 6){$null=$text | ConvertFrom-Json -AsHashtable -ErrorAction Stop}
+        elseif($file.FullName -match '[\\/]revision_adjuntos[\\/]'){
+            # Historical Architect export contains __type fields. JavaScriptSerializer treats
+            # those as .NET type metadata and fails when no type resolver is configured.
+            # ConvertFrom-Json validates the JSON syntax without resolving those type names.
+            $null=$text | ConvertFrom-Json -ErrorAction Stop
+        }
+        else{Add-Type -AssemblyName System.Web.Extensions; $serializer=New-Object System.Web.Script.Serialization.JavaScriptSerializer; $serializer.MaxJsonLength=16777216; $null=$serializer.DeserializeObject($text)}
+    } catch {
+        throw "JSON invalido o incompatible en '$($file.FullName)': $($_.Exception.Message)"
+    }
 }
 $fields=@(Get-Content -LiteralPath (Join-Path $Root 'data-table-fields.json') -Raw -Encoding UTF8 | ConvertFrom-Json)
 $definition=Get-Content -LiteralPath (Join-Path $Root 'DT_Demo_Pedidos_Clientes.json') -Raw -Encoding UTF8 | ConvertFrom-Json
