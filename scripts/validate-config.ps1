@@ -21,7 +21,7 @@ foreach($file in $jsonFiles){
         throw "JSON invalido o incompatible en '$($file.FullName)': $($_.Exception.Message)"
     }
 }
-$fields=@(Get-Content -LiteralPath (Join-Path $Root 'data-table-fields.json') -Raw -Encoding UTF8 | ConvertFrom-Json)
+$fields=ConvertFrom-Json -InputObject ([IO.File]::ReadAllText((Join-Path $Root 'data-table-fields.json'), [Text.Encoding]::UTF8)) -ErrorAction Stop
 $definition=Get-Content -LiteralPath (Join-Path $Root 'DT_Demo_Pedidos_Clientes.json') -Raw -Encoding UTF8 | ConvertFrom-Json
 if($fields.Count -ne 37 -or $fields[0] -cne 'NumeroPedido'){throw 'Se esperan las 37 columnas del Excel empezando por NumeroPedido.'}
 if(@($definition.schema.required) -notcontains 'key' -or $definition.schema.properties.key.title -cne 'NumeroPedido'){throw 'key debe ser obligatoria y mostrarse como NumeroPedido.'}
@@ -48,7 +48,7 @@ $main=@($rows | Where-Object NumeroPedido -CEQ '2540721')
 if($main.Count -ne 1 -or $main[0].orden -cne '1 | 2' -or $main[0].DescripcionIncidencia -cne 'falta tapa interior de 155 la viuda'){throw 'Fila principal alterada.'}
 $manifest=Get-Content -LiteralPath (Join-Path $Root 'datos/source-manifest.json') -Raw -Encoding UTF8 | ConvertFrom-Json
 if((Get-FileHash -LiteralPath (Join-Path $Root 'datos/TablaVerdadHermet10.xlsx') -Algorithm SHA256).Hash.ToLowerInvariant() -cne $manifest.sha256){throw 'El Excel original fue alterado.'}
-$map=@(Get-Content -LiteralPath (Join-Path $Root 'script-inputs.json') -Raw -Encoding UTF8 | ConvertFrom-Json)
+$map=ConvertFrom-Json -InputObject ([IO.File]::ReadAllText((Join-Path $Root 'script-inputs.json'), [Text.Encoding]::UTF8)) -ErrorAction Stop
 if($map.Count -ne 43){throw 'Se esperan 37 campos Excel y 6 entradas auxiliares.'}
 foreach($f in $fields){if(@($map | Where-Object {$_.name -ceq $f -and $_.architect -ceq "Flow.$f"}).Count -ne 1){throw "Falta mapeo $f"}}
 foreach($m in $map){if($m.input -ne $true -or $m.output -ne $false -or $m.readOnly -ne $true){throw 'Todos los inputs del Script deben ser solo lectura, sin outputs.'}}
