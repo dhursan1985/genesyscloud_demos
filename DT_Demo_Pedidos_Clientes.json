@@ -5,6 +5,7 @@
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "DT_Demo_Pedidos_Clientes",
     "type": "object",
+    "additionalProperties": false,
     "required": [
       "key"
     ],

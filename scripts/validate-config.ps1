@@ -24,6 +24,7 @@ foreach($file in $jsonFiles){
 $fields=ConvertFrom-Json -InputObject ([IO.File]::ReadAllText((Join-Path $Root 'data-table-fields.json'), [Text.Encoding]::UTF8)) -ErrorAction Stop
 $definition=Get-Content -LiteralPath (Join-Path $Root 'DT_Demo_Pedidos_Clientes.json') -Raw -Encoding UTF8 | ConvertFrom-Json
 if($fields.Count -ne 37 -or $fields[0] -cne 'NumeroPedido'){throw 'Se esperan las 37 columnas del Excel empezando por NumeroPedido.'}
+if($definition.schema.additionalProperties -ne $false){throw 'Genesys requiere schema.additionalProperties=false en la raiz de la Data Table.'}
 if(@($definition.schema.required) -notcontains 'key' -or $definition.schema.properties.key.title -cne 'NumeroPedido'){throw 'key debe ser obligatoria y mostrarse como NumeroPedido.'}
 $displayColumns=@($definition.schema.properties.PSObject.Properties | ForEach-Object {$_.Value.title})
 if(($displayColumns -join ',') -cne ($fields -join ',')){throw 'Las columnas del esquema no coinciden exactamente con el Excel.'}
